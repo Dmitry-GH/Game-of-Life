@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Conway's Game of Life</title>
+	<style>
+		body{
+			min-width: 100px;
+		}
+		canvas{
+			border: 1px dotted red;
+			cursor: pointer;
+		}
+		input{
+			width: 50px;
+		}
+		.fixedControls {
+		    position: fixed;
+		    top: 0;
+		    right: 0;
+		    background: white;
+		    border: 2px solid rgb(255, 200, 0);
+		    padding: 8px;
+		}
+		.controlsHeader{
+			font-size: 16px;
+			font-weight: bold;
+    		padding-bottom: 8px;
+		}
+		.worldControls{
+			margin-top: 8px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Conway's Game of Life (200 x 200)</h1>
+
+	<div class="fixedControls">
+		<div>
+			<div class="controlsHeader">PreStart Initialization:</div>
+
+			<span>Pixel scale: </span>
+			<input id="scale" type="text" value="2">
+
+			<span>Map fill (%): </span>
+			<input id="fill" type="number" value="30" min="0" max="100" step="1">
+
+			<span>Frame refresh (ms): </span>
+			<input id="speed" type="text" value="10">
+		</div>
+
+		<hr>
+
+		<div>
+			<div class="controlsHeader">Controls:</div>
+			<button id="start">Start</button>
+			<button id="pause">Pause</button>
+			<button id="stop">Stop</button>
+			<button id="next">NextGen</button>
+
+			<span>Mouse Position: </span>
+			<input id="mouseX" type="text">
+			<input id="mouseY" type="text">	
+
+			<div class="worldControls">
+				<button id="firstGenRandom">Create Random FirstGen</button>
+				<button id="customGen">Create CustomGen</button>
+				<button id="saveCurrent">Save Current</button>
+			</div>
+		</div>
+	</div>
+	
+	<canvas id="c"></canvas>
+
+<script src="dist/script.min.js"></script>
+</body>
+</html>
