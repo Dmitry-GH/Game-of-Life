@@ -1,32 +1,27 @@
 # Game-of-Life
 Conway's Game of Life 
+_More info [here](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)_
 
-Для запуску гри необхідно відкрити index.html.
-Стек технологій: HTML,CSS та Vanilla.js
-Для візуалізації використаний елемент canvas.
+Link: https://dmitry-gh.github.io/Game-of-Life/
 
-Для комфорту та продуктивності розробки використовувався Grunt.
-На сторінку підключений мінімізований файл dist/script.min.js.
-Вихідний код знаходиться тут: src/script.js
+Technology: HTML,CSS and Vanilla.js
+For visualisation i use html5 canvas.
 
-Контрольна панель:
+## PreStart Initialization:
 
-PreStart Initialization:
++ Pixel scale - scale of 1 cell.
++ Map fill (%) - percentage filling in the case of an arbitrary filling.
++ Frame refresh (ms) - frame rate (similar to speed).
++ If the game is started, the frame rate changes during the entry.
 
-Pixel scale - масштаб 1 клітинки;
-Map fill (%) - відсоток заповнення у випадку довільного заповнення.
-Frame refresh (ms) - частота зміни кадрів (аналог швидкості).
-Якщо гра запущена, то частота зміни кадрів змінюється підчас введення.
+## Controls: 
++ Create Random FirstGen - generates an arbitrary fill of points and displays them on the screen.
++ Create CustomGen - empty field for self-filling.
++ Save Current - saving the current array of points.
++ Stop - stops generating and displays the initial state (unless the status button is pressed).
 
-Controls: 
-Create Random FirstGen - генерує довільне заповнення точок і відображає на екрані.
-Create CustomGen - пусте поле для заповнення власноруч.
-Save Current - збереження поточного масиву точок.
-Stop - зупиняє генерацію і виводить початковий стан (якщо не натискалась кнопка збереження стану).
+NextGen - one step forward.
 
-NextGen - на один крок вперед.
+Mouse Position - coordinates of the cursor.
 
-Mouse Position - координати точок курсору.
-
-
-Додавати/видаляти точки можна як підчас роботи гри, так і на павзі.
+You can add / remove points both during the game and on the pause.
